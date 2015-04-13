@@ -1,0 +1,73 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Matricula.master.cs" Inherits="Matricula" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1
+        {
+            width: 100%;
+        }
+        #form1
+        {
+            height: 3px;
+        }
+        .nuevoEstilo1 {
+            background-color: #E0FE9A;
+        }
+        .nuevoEstilo2 {
+            background-color: #E9E3E9;
+        }
+        .nuevoEstilo3 {
+            background-color: #E9E3E9;
+        }
+        .nuevoEstilo4 {
+            background-color: #31475D;
+        }
+        .auto-style4
+        {
+            width: 1412px;
+            height: 150px;
+        }
+        .auto-style5
+        {
+            height: 205px;
+        }
+        .auto-style6
+        {
+            width: 1482px;
+            height: 162px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table class="auto-style1">
+            <tr>
+                <td colspan="2" class="auto-style5">
+                    <img alt="" class="auto-style4" src="Images/LOGO.jpg" /></td>
+            </tr>
+            <tr>
+                <td class="nuevoEstilo4">
+                    <asp:TreeView ID="TreeView1" runat="server" DataSourceID="SiteMapDataSource1" ShowLines="True" CssClass="nuevoEstilo4" ForeColor="White">
+                    </asp:TreeView>
+                    <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+                </td>
+                <td class="nuevoEstilo3">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <img alt="" class="auto-style6" src="Images/PIE%20DE%20PAGINA.jpg" /></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
